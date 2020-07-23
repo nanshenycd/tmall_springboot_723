@@ -13,4 +13,16 @@ public class AdminPageController {
 	public String listCategory(){
 		return "admin/listCategory";
 	}
+	@GetMapping(value = "/admin_category_delete")
+	public String add(){
+		return "redirect:admin_category_list";
+	}
+	@GetMapping(value = "/admin_cateory_add")
+	public String delete(){
+		return "redirect:admin_category_list";
+	}
+	@GetMapping(value = "admin_category_edit")
+	public String update(){
+		return "admin/editCategory";
+	}
 }

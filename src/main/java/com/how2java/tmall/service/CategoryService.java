@@ -18,4 +18,18 @@ public class CategoryService {
     	Sort sort = new Sort(Sort.Direction.DESC, "id");
 		return categoryDAO.findAll(sort);
 	}
+
+	public Category save(Category bean) {
+		return categoryDAO.save(bean);
+	}
+
+	public String delete(int id){
+		 categoryDAO.delete(id);
+		 return "delete is successfully";
+	}
+
+	public Category get(int id){
+		Category c = categoryDAO.findOne(id);
+		return c;
+	}
 }
