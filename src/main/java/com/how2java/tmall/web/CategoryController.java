@@ -46,7 +46,7 @@ public class CategoryController {
 	@DeleteMapping("categories/{id}")
 	public String delete(@PathVariable("id") int id, HttpServletRequest request){
 		categoryService.delete(id);
-		return "delete successfully";
+		return null;
 	}
 
 	/**

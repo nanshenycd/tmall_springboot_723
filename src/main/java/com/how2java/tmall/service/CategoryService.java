@@ -64,4 +64,6 @@ public class CategoryService {
 		Category c = categoryDAO.findOne(id);
 		return c;
 	}
+
+
 }
